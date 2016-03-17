@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interrupted!</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="list timers">
+    <div class="relative">
+
+        <div class="item item-button-right">
+            <button class="reset button button-calm" style="" id="reset">
+                <i class="icon ion-loop"></i>
+            </button>
+            <button class="interrupt button button-balanced" style="" id="interrupt">
+                <i class="icon ion-person"></i>
+            </button>
+            <button class="interrupt button button-assertive" style="display: none;" id="resume">
+                <i class="icon ion-person-stalker"></i>
+            </button>
+            <button class="break button button-stable" style="" id="pause">
+                <i class="icon ion-pause"></i>
+            </button>
+            <button class="break button button-stable" style="display: none;" id="play">
+                <i class="icon ion-play"></i>
+            </button>
+            <table>
+                <tr>
+                    <td>Active:</td>
+                    <td id="time_worked">00:00:00</td>
+                </tr>
+                <tr>
+                    <td>Disrupted:</td>
+                    <td id="time_stopped">00:00:00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
